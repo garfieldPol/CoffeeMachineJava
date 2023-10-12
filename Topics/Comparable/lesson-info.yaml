@@ -1,0 +1,14 @@
+content:
+- Theory
+- Natural ordering
+- Comparing objects
+- compareTo
+- Rules
+- Rewrite compareTo method
+- Implement Comparable
+- Implement compareTo method
+- Implement comparing by additional fields
+- Ratings
+- Value class
+- Addresses
+- Leaderboard

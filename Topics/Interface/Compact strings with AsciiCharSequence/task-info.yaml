@@ -1,0 +1,50 @@
+type: code
+files:
+- name: src/Main.java
+  visible: true
+  text: |-
+    import java.util.*;
+
+    class AsciiCharSequence /* extends/implements */ {
+        // implementation
+    }
+  learner_created: false
+feedback_link: https://hyperskill.org/learn/step/3082#comment
+status: Failed
+feedback:
+  message: |
+    Compilation error
+    Main.java:67: error: constructor AsciiCharSequence in class AsciiCharSequence cannot be applied to given types;
+            CharSequence cs = new AsciiCharSequence(new byte[] {32, 32, 32});
+                              ^
+      required: no arguments
+      found:    byte[]
+      reason: actual and formal argument lists differ in length
+    Main.java:71: error: constructor AsciiCharSequence in class AsciiCharSequence cannot be applied to given types;
+            CharSequence cs = new AsciiCharSequence(new byte[0]);
+                              ^
+      required: no arguments
+      found:    byte[]
+      reason: actual and formal argument lists differ in length
+    Main.java:86: error: constructor AsciiCharSequence in class AsciiCharSequence cannot be applied to given types;
+                CharSequence cs = new AsciiCharSequence(s.getBytes(StandardCharsets.US_ASCII));
+                                  ^
+      required: no arguments
+      found:    byte[]
+      reason: actual and formal argument lists differ in length
+    Main.java:115: error: constructor AsciiCharSequence in class AsciiCharSequence cannot be applied to given types;
+            CharSequence cs = new AsciiCharSequence(s.getBytes(StandardCharsets.US_ASCII));
+                              ^
+      required: no arguments
+      found:    byte[]
+      reason: actual and formal argument lists differ in length
+    Main.java:123: error: constructor AsciiCharSequence in class AsciiCharSequence cannot be applied to given types;
+            CharSequence cs = new AsciiCharSequence("abc".getBytes(StandardCharsets.US_ASCII));
+                              ^
+      required: no arguments
+      found:    byte[]
+      reason: actual and formal argument lists differ in length
+    5 errors
+  time: "Tue, 26 Sep 2023 18:15:24 UTC"
+record: -1
+submission_language: java17
